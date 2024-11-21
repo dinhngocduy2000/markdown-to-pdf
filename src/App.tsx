@@ -1,5 +1,4 @@
 import React from "react";
-
 import ReactMarkdown from "react-markdown";
 import { usePDF } from "react-to-pdf";
 import remarkGfm from "remark-gfm";
@@ -102,25 +101,20 @@ Please send your resume, GitHub profile, and portfolio to [email@example.com].
           className={"whitespace-pre-wrap"}
           components={{
             p: ({ node, ...props }) => {
-              return <p {...props} className="text-[35px] text-[#4e5255]" />;
+              return <p {...props} className="text-[30px] text-[#4e5255]" />;
             },
             h1: ({ node, ...props }) => {
-              return <h1 {...props} className="text-[40px] font-bold" />;
+              return <h1 {...props} className="text-[30px]" />;
             },
             h2: ({ node, ...props }) => {
-              return (
-                <h2
-                  {...props}
-                  className="text-[38px] font-semibold leading-[2.5]"
-                />
-              );
+              return <h2 {...props} className="text-[33px] leading-[2.5]" />;
             },
             h3: ({ node, ...props }) => {
-              return <h3 {...props} className="text-[35px] leading-[0.5]" />;
+              return <h3 {...props} className="text-[30px] leading-[0.5]" />;
             },
             li: ({ node, ...props }) => {
               return (
-                <li {...props} className="text-[35px] text-[#4e5255] mx-8" />
+                <li {...props} className="text-[30px] text-[#4e5255] mx-8" />
               );
             },
           }}
